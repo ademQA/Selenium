@@ -5,7 +5,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class C04_DriverManageMethodlari {
     public static void main(String[] args) throws InterruptedException {
-        //System.setProperty("webdriver.chrome.driver","src/drivers/chromedriver");
+        System.setProperty("webdriver.chrome.driver","src/drivers/chromedriver");
         WebDriver driver=new ChromeDriver();
         driver.get("http://wisequarter.com");
         Thread.sleep(3000);

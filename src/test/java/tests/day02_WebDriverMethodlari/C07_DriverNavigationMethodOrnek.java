@@ -15,10 +15,11 @@ import java.time.Duration;
 //9.Browser’i kapatin
 public class C07_DriverNavigationMethodOrnek {
     public static void main(String[] args) throws InterruptedException {
-        //System.setProperty("webdriver.chrome.driver","src/drivers/chromedriver");
+        System.setProperty("webdriver.chrome.driver","src/drivers/chromedriver");
         WebDriver driver=new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
         driver.manage().window().maximize();
+
         driver.navigate().to("https://www.facebook.com");
 
         String actualTitle=driver.getTitle();
