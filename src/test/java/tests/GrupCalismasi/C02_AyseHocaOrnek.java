@@ -1,4 +1,5 @@
-package tests.day04_xpath;
+package tests.GrupCalismasi;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -6,17 +7,12 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.time.Duration;
 
-public class C06_AyseHocaOrnek {
-
+public class C02_AyseHocaOrnek {
     public static void main(String[] args) throws InterruptedException {
-
         System.setProperty("webdriver.chrome.driver","src/drivers/chromedriver");
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(12));
-
-
-
         //1- https://www.youtube.com adresine git
 
         driver.get("https://www.youtube.com");
@@ -44,7 +40,7 @@ public class C06_AyseHocaOrnek {
             emailSubmitElementi.sendKeys("aysenur.algul34@gmail.com");
             Thread.sleep(3000);
 
-      WebElement sonrakiButon1Element = driver.findElement(By.xpath("//span[text()=\"Sonraki\"]"));
+            WebElement sonrakiButon1Element = driver.findElement(By.xpath("//span[text()=\"Sonraki\"]"));
             sonrakiButon1Element.click();
             Thread.sleep(5000);
 
